@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ryan Duncan - Turbo</title>
+        <meta name="description" content="I'm a freelance Designer and front-end developer based in Aberdeen. You can find out more or get in touch by visiting the site!" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@weeryzer" />
+    <meta name="twitter:title" content="Ryan Duncan - Design and Front-end Development" />
+    <meta name="twitter:description" content="View the latest projects I have been working on from placements, freelance and university." />
+    <meta name="twitter:image" content="http://www.ryan-duncan.co.uk/img/twitter-card.jpg" />
+
+    <link rel="icon" type="image/png" href="img/favicon.png">
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/glitch.css" rel="stylesheet">
+    <link href="css/homepage.css" rel="stylesheet">
+    <link href="css/nav.css" rel="stylesheet">
+    <link href="css/projects.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+  </head>
+  <body>
+
+  <header>
+  <div class="container">
+
+    <div class="col-md-4">
+
+      <a href="index.html"><img class="header-logo" alt="Ryan Duncan Logo" src="img/header-logo.svg"></a>
+
+    </div>
+
+    <div class="col-md-2"></div>
+
+    <div class="col-md-6">
+
+      <a id="header-nav-button"><span>MENU</span></a>
+      <a id="header-nav-close-button"><span>CLOSE</span></a>
+      
+      <ul class="header-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <ul class="mobile-nav">
+        <a href="index.html"><li>Home</li></a>
+        <a href="about.html"><li>About</li></a>
+        <a href="projects.html"><li>Projects</li></a>
+        <a href="contact.html"><li>Contact</li></a>
+      </ul>
+
+    </div>
+
+  </div>
+  </header>
+
+<div id="overlay-mob"></div>
+
+<div class="project-head" alt="Project Image" style="background-image: url(img/paramount-bw.jpg);">
+
+</div>
+
+<div class="container">
+
+  <div class="row">
+
+  <div class="col-md-12">
+
+    <div class="project-top-info">
+
+          <h2>Turbo</h2>
+          <h4>BRANDING &bull; WEB &bull; WIP</h4>
+          <hr>
+          <p>My aim for Turbo was originally to be a motor magazine including prototypes, luxury, everyday and modified vehicles. After designing the logo, I started on an app that would incorporate a social media platform and an online magazine section. I have been into cars from a young age which has led me to creating this brand.</p>
+
+    </div>
+
+    </div>
+
+  </div>
+
+  <div class="row">
+
+    <div class="col-md-4">
+
+    <a href="projects.html"><button class="back-project">&larr; Back to projects</button></a>
+
+      <div class="project-info">
+        <h4>PROJECT INFO</h4>
+        <hr>
+        <p>The logo incorporates a 2D illustration of a turbo that could potentially stand alone and be animated for use in video and loading sections.</p> <p>I have selected a few screens of what the app design looks like so far showing the log in screen, menu, homepage and an online article from a verified submitter.</p>
+    </div>
+
+    </div>
+
+    <div class="col-md-8">
+
+      <div class="project-info">
+        <h4>DEVELOPED LOGO SO FAR</h4>
+        <hr>
+        <img alt="Turbo Logo" src="img/turbo1.jpg">
+      </div>
+
+      <div class="project-info">
+        <h4>APP DESIGN DEVELOPMENT</h4>
+        <hr>
+        <img alt="Turbo App Screen" src="img/turbo2.jpg">
+        <hr>
+        <img alt="Turbo App Screen" src="img/turbo3.jpg">
+        <hr>
+        <img alt="Turbo App Screen" src="img/turbo4.jpg">
+        <hr>
+        <img alt="Turbo App Screen" src="img/turbo5.jpg">
+      </div>
+
+    </div>
+
+</div>
+</div>
+
+<footer>
+
+  <div class="footer-top">
+
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container">
+
+    <div class="col-md-4">
+
+      <h6>MENU</h6>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+
+    </div>
+
+    <div class="col-md-4">
+
+      <h6>SOCIAL</h6>
+      <a target="_blank" href="http://www.twitter.com/weeryzer">Twitter</a>
+      <a target="_blank" href="http://www.instagram.com/rydncn">Instagram</a>
+
+    </div>
+
+    <div class="col-md-4">
+    <h6>INFO</h6>
+      <p>Website was created using the twelve column Bootstrap grid system. <a target='_blank' href="https://github.com/hmongouachon/mgGlitch">mgGlitch.js</a> and <a target='_blank' href="http://www.mattboldt.com/demos/typed-js/">typed.js</a> helped make bits work. The fonts used were <a target='_blank' href="https://www.myfonts.com/fonts/radomir-tinkov/gilroy/">Gilroy</a> and <a target='_blank' href="https://fonts.google.com/specimen/Roboto">Roboto</a>.</p>
+      <p style="margin-top: 20px;">&copy; Ryan Duncan</p>
+    </div>
+
+    </div>
+  </div>
+
+</footer>
+
+
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<script>
+$('#header-nav-button').click(function() {
+  $('.mobile-nav').show();
+  $('#overlay-mob').show();
+  $('#header-nav-button').hide();
+  $('#header-nav-close-button').show();
+});
+
+$('#header-nav-close-button').click(function() {
+  $('.mobile-nav').hide();
+  $('#overlay-mob').hide();
+  $('#header-nav-close-button').hide();
+  $('#header-nav-button').show();
+});
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,136 @@
+/* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */    
+    height: 0;
+    width: 100%;
+    position: fixed; /* Stay in place */
+    z-index: 500; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: #032726;
+    overflow-y: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+    text-align: left;
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+    position: relative;
+    top: 10%; /* 25% from the top */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+    text-decoration: none;
+    font-size: 25px;
+    color: #FEFDFB;
+    transition: 0.3s; /* Transition effects on hover (color) */
+    margin: 0px;
+    display: block;
+    padding: 0px 0px 10px 0px;
+    font-family: 'Roboto', sans-serif;
+    width: 3em;
+}
+
+.overlay-content span {
+    font-size: 45px;
+    color: #08A6A1;
+    width: 3em;
+}
+
+.social {
+    margin-top: 80px;
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+    opacity: 0.5;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+    position: absolute;
+    top: 40px;
+    font-size: 40px;
+    font-weight: bold;
+    width: 0.5em;
+}
+
+.overlay .closebtn span {
+    font-family: 'Gilroy', Arial, sans-serif;
+    font-size: 40px;
+    width: 3em;
+}
+
+.nav {
+    border-right: 1px solid #fff;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+    .overlay a {
+        font-size: 20px;
+    }
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+@media (max-width: 320px) {
+    .overlay-content span {
+        font-size: 30px;
+    }
+
+    .overlay a {
+        font-size: 20px;
+    }
+
+    .overlay-content {
+        margin-top: 50px;
+    }
+
+    .social {
+        margin-top: 20px;
+    }
+
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 35px;
+        left: 15px;
+    }
+
+    #social-hidden {
+        visibility: hidden;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 425px){
+        .overlay-content span {
+        font-size: 45px;
+    }
+
+    .overlay a {
+        font-size: 25px;
+    }
+
+    .overlay-content {
+        margin-top: 50px;
+    }
+
+    .social {
+        margin-top: 20px;
+    }
+
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 35px;
+        left: 15px;
+    }
+
+    #social-hidden {
+        visibility: hidden;
+    }
+}

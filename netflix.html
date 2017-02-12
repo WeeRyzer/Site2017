@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ryan Duncan - Netflix Web App</title>
+        <meta name="description" content="I'm a freelance Designer and front-end developer based in Aberdeen. You can find out more or get in touch by visiting the site!" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@weeryzer" />
+    <meta name="twitter:title" content="Ryan Duncan - Design and Front-end Development" />
+    <meta name="twitter:description" content="View the latest projects I have been working on from placements, freelance and university." />
+    <meta name="twitter:image" content="http://www.ryan-duncan.co.uk/img/twitter-card.jpg" />
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/homepage.css" rel="stylesheet">
+    <link href="css/projects.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="img/favicon.png">
+
+  </head>
+  <body>
+
+  <header>
+  <div class="container">
+
+    <div class="col-md-4">
+
+      <a href="index.html"><img class="header-logo" alt="Ryan Duncan Logo" src="img/header-logo.svg"></a>
+
+    </div>
+
+    <div class="col-md-2"></div>
+
+    <div class="col-md-6">
+
+      <a id="header-nav-button"><span>MENU</span></a>
+      <a id="header-nav-close-button"><span>CLOSE</span></a>
+      
+      <ul class="header-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <ul class="mobile-nav">
+        <a href="index.html"><li>Home</li></a>
+        <a href="about.html"><li>About</li></a>
+        <a href="projects.html"><li>Projects</li></a>
+        <a href="contact.html"><li>Contact</li></a>
+      </ul>
+
+    </div>
+
+  </div>
+  </header>
+
+<div id="overlay-mob"></div>
+
+<div class="project-head" alt="Project Image" style="background-image: url(img/paramount-bw.jpg);">
+
+</div>
+
+<div class="container">
+
+  <div class="row">
+
+  <div class="col-md-12">
+
+    <div class="project-top-info">
+
+          <h2>Netflix Web App</h2>
+          <h4>WEB APP &bull; UNI PROJECT</h4>
+          <hr>
+          <p>For this project, university asked us to create a web application that would help people find/create information in any area we wanted. We went through three stages, the first was to come up with the idea for the application itself and design through wireframes and mock-ups on Photoshop. The second stage was to create the web app in HTML and CSS and then finally we had to make the application work using API's and JS.</p>
+
+    </div>
+
+    </div>
+
+  </div>
+
+  <div class="row">
+
+    <div class="col-md-4">
+
+    <a href="projects.html"><button class="back-project">&larr; Back to projects</button></a>
+
+      <div class="project-info">
+        <h4>PROJECT INFO</h4>
+        <hr>
+        <p>Here is a small preview of how the website works. The user can choose which Netflix region they would like, search for a film/tv series to read all the information on it. They can also find out what is newly added and highest and lowest rated in the Netflix catalogue.</p>
+
+        <p>The aim for the application was to provide the user with the most important information first. When you are looking for something to watch you tend to be interested in what has recently been added or what has the highest reviews at that moment. We wanted to give the user the information that they don't really find as much on the actual Netflix website. Maybe the user is looking for a bit of a laugh at the films/programs that aren't as well received from other viewers which is why we added the lowest rated section too. This app could also be implemented for Amazon Prime.</p>
+    </div>
+
+    </div>
+
+    <div class="col-md-8">
+
+      <div class="project-info">
+        <h4>WEB APP PREVIEW</h4>
+        <hr>
+        <video autoplay muted loop src="img/netflix.webm" alt="Preview video of web app"></video>
+      </div>
+
+      <div class="project-info">
+        <h4>WEB APP DESIGN EXAMPLES</h4>
+        <hr>
+        <img alt="Web app homepage" src="img/netflix1.jpg">
+        <hr>
+        <img alt="Web app details" src="img/netflix2.jpg">
+      </div>
+    </div>
+
+</div>
+</div>
+
+<footer>
+
+  <div class="footer-top">
+
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container">
+
+    <div class="col-md-4">
+
+      <h6>MENU</h6>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+
+    </div>
+
+    <div class="col-md-4">
+
+      <h6>SOCIAL</h6>
+      <a target="_blank" href="http://www.twitter.com/weeryzer">Twitter</a>
+      <a target="_blank" href="http://www.instagram.com/rydncn">Instagram</a>
+
+    </div>
+
+    <div class="col-md-4">
+    <h6>INFO</h6>
+      <p>Website was created using the twelve column Bootstrap grid system. <a target='_blank' href="https://github.com/hmongouachon/mgGlitch">mgGlitch.js</a> and <a target='_blank' href="http://www.mattboldt.com/demos/typed-js/">typed.js</a> helped make bits work. The fonts used were <a target='_blank' href="https://www.myfonts.com/fonts/radomir-tinkov/gilroy/">Gilroy</a> and <a target='_blank' href="https://fonts.google.com/specimen/Roboto">Roboto</a>.</p>
+      <p style="margin-top: 20px;">&copy; Ryan Duncan</p>
+    </div>
+
+    </div>
+  </div>
+
+</footer>
+
+
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<script>
+$('#header-nav-button').click(function() {
+  $('.mobile-nav').show();
+  $('#overlay-mob').show();
+  $('#header-nav-button').hide();
+  $('#header-nav-close-button').show();
+});
+
+$('#header-nav-close-button').click(function() {
+  $('.mobile-nav').hide();
+  $('#overlay-mob').hide();
+  $('#header-nav-close-button').hide();
+  $('#header-nav-button').show();
+});
+</script>
+
+</body>
+</html>

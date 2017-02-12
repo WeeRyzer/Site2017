@@ -1,0 +1,96 @@
+.navbar-form input, .form-inline input {
+	width:auto;
+}
+
+header {
+  height:70px;
+  background-color: #FEFDFB;
+  margin-bottom: 50px;
+  z-index: 500;
+  position: relative;
+}
+
+.projects-blurb {
+  min-height: 200px;
+  background-color: #FEFDFB;
+  margin-bottom: 40px;
+  padding: 30px;
+}
+
+
+.projects-menu {
+  background-color: #FEFDFB;
+}
+
+.projects-menu-item, .unactive {
+  display: block;
+  padding: 25px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  margin: 0;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+
+.projects-menu-item:hover, .projects-menu-item:focus, .projects-menu-item:target, .projects-menu-item:first-child:hover {
+  background-color: #043b39;
+  transition: all 0.3s;
+  text-decoration: none;
+  color: #FEFDFB;
+}
+
+.projects-menu-item:first-child {
+  background-color: #032726; /*rgba(4, 59, 57, 0.85);*/
+  color: #fff;
+}
+
+#sidebar {
+  margin-bottom: 50px;
+}
+
+.projects {
+  background-color: #FEFDFB;
+  width: 100%;
+  padding: 30px;
+  margin-bottom: 40px;
+}
+
+.end {
+  font-size: 22px;
+  color: #FEFDFB;
+  text-align: center;
+}
+
+#my-work {
+  min-height: 900px;
+}
+
+@media (min-width: 1200px) {
+   #sidebar.affix-top {
+    position: static;
+    width:263px !important;
+  }
+  
+  #sidebar.affix {
+    position: fixed;
+    top:25px;
+    width: 263px !important;
+  } 
+}
+
+@media (min-width: 979px) {
+  #sidebar.affix-top {
+    position: static;
+  	width:228px;
+  }
+  
+  #sidebar.affix {
+    position: fixed;
+    top:25px;
+    width: 228px;
+  }
+}
+
+.affix,.affix-top {
+   position:static;
+}
