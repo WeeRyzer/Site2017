@@ -445,7 +445,7 @@ header span {
 form input, form textarea {
   width: 100%;
   margin-bottom: 30px;
-   outline: none;
+  outline: none;
 }
 
 input, label {
@@ -459,6 +459,10 @@ input[type="text"], input[type="email"] {
   color: #717171;
   font-size: 16px;
   border: 3px solid #d4d4d4;
+  border-radius: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 input[type="text"]:focus, input[type="email"]:focus, textarea:focus { 
@@ -477,6 +481,10 @@ textarea {
   color: #717171;
   font-size: 16px;
   border: 3px solid #d4d4d4;
+  border-radius: none;
+    -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 label {
